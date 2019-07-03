@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include partials/head %>
+
+<body>
+    <% include partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_contact") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/" target="_self"><%- i18n.__("nav_home") %></a></li>
+                    <li class="active"><span><%- i18n.__("nav_contact") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--  ICON BOXES -->
+    <div class="about1-numbers contact">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="shadow-effect">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="number lightgray"><span class="typcn typcn-mail"></span></div>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <h4 title="Feel free to contact us"><%- i18n.__("nav_contact") %></h4>
+                            <p><%- i18n.__("contact-p1") %></p>
+                            <span><a href="">info@tanaka-scale-vietnam.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="shadow-effect">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="number blue"><span class="typcn typcn-heart"></span></div>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <h4 title="Thắc mắc và Tư vấn"><%- i18n.__("contact-qa") %></h4>
+                            <p><%- i18n.__("contact-p2") %></p>
+                            <span>Phone: 02513 566 151</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="shadow-effect">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="number green"><span class="typcn typcn-location"></span></div>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <h4 title="Ghé thăm chúng tôi"><%- i18n.__("contact-visit-us") %></h4>
+                            <p><%- i18n.__("company_address") %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--  END OF ICON BOXES -->
+
+    <!--  FORM -->
+    <section class="contact-form">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 title="Contact"><%- i18n.__("nav_contact") %></h2>
+                <hr class="small" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="sendstatus"></div>
+                <div id="contactform">
+                    <form accept-charset='UTF-8' action='/contact' class='contact-form' method='post'>
+                        <input name='form_type' type='hidden' value='contact'>
+                        <input name='utf8' type='hidden' value='✓'>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p><label for="contactFormName"><%- i18n.__("fullname") %>:*</label> <input required type="text"
+                                        class="form-control" name="contact[name]" id="contactFormName" tabindex="1"
+                                        value="" /></p>
+                                <p><label for="contactFormEmail">Email:*</label> <input required type="text"
+                                        class="form-control" name="contact[email]" id="contactFormEmail" tabindex="2"
+                                        value="" /></p>
+                                <p><label for="contactFormPhone"><%- i18n.__("phone") %>:*</label> <input required type="text"
+                                        class="form-control" name="contact[phone]" id="contactFormPhone" tabindex="3"
+                                        value="" /></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><label for="contactFormMessage"><%- i18n.__("message") %>:*</label> <textarea required
+                                        class="form-control" name="contact[body]" id="contactFormMessage"
+                                        tabindex="4"></textarea></p>
+                            </div>
+                        </div>
+                        <p><input name="submit" type="submit" id="submit" value="Submit" class="submit" tabindex="5" /></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--  END OF FORM -->
+
+    <div id="map_wrapper">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13186.198349801587!2d106.93977875238919!3d10.712855955635224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x814f9fe34ee4e0ab!2sC%C3%B4ng+Ty+Tnhh+Tanaka+Scale+Vi%E1%BB%87t+Nam!5e0!3m2!1svi!2s!4v1558085494335!5m2!1svi!2s"
+            width="100%" height="550" style="border:1" allowfullscreen></iframe>
+    </div>
+    <% include partials/footer %>
+</body>
+<% include partials/scripts %>
+
+</html>

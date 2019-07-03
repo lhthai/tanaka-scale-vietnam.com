@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../../partials/head %>
+
+<body>
+    <% include ../../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_products") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/products" target="_self"><%- i18n.__("nav_products") %></a></li>
+                    <li><a href="/products/floor-scales" target="_self"><%- i18n.__("floor-scale") %></a></li>
+                    <li class="active"><span><%- i18n.__("ttl") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="services2" style="background: #E9E9E9">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <h2 title="TTL Type" class="text-left"><span><%- i18n.__("ttl") %></span></h2><br />
+                <p class="just"><%- i18n.__("ttl-detail-p") %></p>
+                <ul>
+                    <li><%- i18n.__("ttl-feature-li-1") %></li>
+                    <li><%- i18n.__("ttl-feature-li-2") %></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction home3" style="background: #fff">
+        <div class="row spacing-45">
+            <div class="col-md-offset-1 col-sm-10">
+                <h3><%- i18n.__("appearance") %></h3>
+                <hr>
+                <img src="/images/ttl-detail.jpg" alt="TTL Type">
+                <h3><%- i18n.__("features") %></h3>
+                <hr>
+                <ul>
+                    <li><%- i18n.__("ttl-appearance-li-1") %></li>
+                    <li><%- i18n.__("ttl-appearance-li-2") %></li>
+                    <li><%- i18n.__("ttl-appearance-li-3") %></li>
+                    <li><%- i18n.__("ttl-appearance-li-4") %></li>
+                </ul>
+                <h3><%- i18n.__("specification") %></h3>
+                <hr>
+                <div class="p_table table_scroll">
+                    <table class="table_box">
+                        <thead>
+                            <tr>
+                                <th colspan="4"><%- i18n.__("body") %></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table01">
+                            <tr>
+                                <td><%- i18n.__("model") %></td>
+                                <td>TT-300</td>
+                                <td>TT-1</td>
+                                <td>TT-1.5</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("capacity") %></td>
+                                <td>600kg</td>
+                                <td>1000kg</td>
+                                <td>1500kg</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("scale-interval") %></td>
+                                <td>200g</td>
+                                <td>500g</td>
+                                <td>500g</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("platform-dimension") %></td>
+                                <td colspan="4">1,000×1,000mm　　1,200×1,200mm</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("height") %></td>
+                                <td colspan="4">100mm</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("material") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-material-content") %></td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th colspan="4"><%- i18n.__("indicator") %></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table01">
+                            <tr>
+                                <td><%- i18n.__("model") %></td>
+                                <td colspan="4">HD-1000C</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("display-section") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-display-section-content") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("status-display") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-status-display-content") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("function") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-function-content") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("material") %>, <%- i18n.__("protection-grade") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-protection-grade-content") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("power") %></td>
+                                <td colspan="4">AC100V ±10% Max20VA</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("options") %></td>
+                                <td colspan="4"><%- i18n.__("ttl-options-content") %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><%- i18n.__("note-1") %><br />
+                    <%- i18n.__("note-2") %></p>
+            </div>
+
+        </div>
+
+    </section>
+    <% include ../../partials/footer %>
+</body>
+<% include ../../partials/scripts %>
+
+</html>

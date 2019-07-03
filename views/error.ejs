@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/head %>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; margin-top: 100px">
+                <h1><%= message %></h1>
+                <h1><%= error.status %></h1>
+                <a href="/" class="btn btn-primary" role="button"><%- i18n.__("comeback_home") %></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

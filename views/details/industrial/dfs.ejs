@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../../partials/head %>
+
+<body>
+    <% include ../../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_products") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/products" target="_self"><%- i18n.__("nav_products") %></a></li>
+                    <li><a href="/products/industrial-scales" target="_self"><%- i18n.__("industrial-scale") %></a></li>
+                    <li class="active"><span><%- i18n.__("dfs") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="services2" style="background: #E9E9E9">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <h2 title="Digi-fork (DFS)" class="text-left"><span><%- i18n.__("dfs") %></span></h2><br />
+                <p class="just"><%- i18n.__("dfs-p") %></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction home3" style="background: #fff">
+        <div class="row spacing-45">
+            <div class="col-md-offset-1 col-sm-10">
+                <h3><%- i18n.__("appearance") %></h3>
+                <hr>
+                <img style="max-height: 500px" src="/images/dfs-detail-1.jpg" alt="Digi-fork (DFS)">
+                <h3><%- i18n.__("features") %></h3>
+                <hr>
+                <ul>
+                    <li><%- i18n.__("dfs-feature-li-1") %></li>
+                    <li><%- i18n.__("dfs-feature-li-2") %></li>
+                    <li><%- i18n.__("dfs-feature-li-3") %></li>
+                    <li><%- i18n.__("dfs-feature-li-4") %></li>
+                </ul>
+                <h3><%- i18n.__("specification") %></h3>
+                <hr>
+                <div class="p_table table_scroll">
+                    <table class="table_box">
+                        <thead>
+                            <tr>
+                                <th><%- i18n.__("model") %></th>
+                                <th>DFS-1A</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table01">
+
+                            <tr>
+                                <td><%- i18n.__("capacity") %></td>
+                                <td>1t~2.5t</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("scale-interval") %></td>
+                                <td>1kg~2kg</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("indicator") %></td>
+                                <td>HD-1000C</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("power") %></td>
+                                <td><%- i18n.__("dfs-power-p") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("overall-accuracy") %></td>
+                                <td><%- i18n.__("dfs-overall-accuracy-p") %></td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("pf9-tb-operating") %></td>
+                                <td>--5℃~+40℃</td>
+                            </tr>
+                            <tr>
+                                <td><%- i18n.__("weight-of-body") %></td>
+                                <td><%- i18n.__("dfs-weight-of-body-p") %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    <%- i18n.__("request") %> <br/>
+                    <%- i18n.__("dfs-request-p") %><br/>
+                    <%- i18n.__("note") %><br/>
+                    <%- i18n.__("dfs-note-p") %>
+                </p>
+            </div>
+    </section>
+    <% include ../../partials/footer %>
+</body>
+<% include ../../partials/scripts %>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+<body>
+    <% include ../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_products") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/products" target="_self"><%- i18n.__("nav_products") %></a></li>
+                    <li class="active"><span><%- i18n.__("bench-scale") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES INTRO -->
+    <section class="services2">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 title="TƯ VẤN GIẢI PHÁP" class="text-left"><span><%- i18n.__("perfection-scale-list") %></span></h2><br />
+                <p class="just"><%- i18n.__("perfection-scale-desc") %></p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction home3">
+
+        <div class="row">
+            <blockquote class="blockquote-colored">
+            </blockquote>
+        </div>
+
+        <div class="row spacing-45">
+            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <a href="/products/bench-scales/pf9">
+                    <div class="shadow-effect">
+                        <div class="row">
+                            <div class="col-sm-12 products-item">
+                                <p class="just">
+                                    <img style="max-height: 180px; padding-left: 60px" src="/images/bench-scale.jpg"
+                                        alt="Perfection scale
+                                        (PF9 Series)">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-title a-white">
+                        <div class="calltoaction home3 cta-button">
+                            <a href="/products/bench-scales/pf9" class="hw-btn" style="margin:0;padding:12px 20px;font-size:18px"><%- i18n.__("pf9") %></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF SERVICES -->
+    <% include ../partials/footer %>
+</body>
+<% include ../partials/scripts %>
+
+</html>

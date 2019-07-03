@@ -1,0 +1,156 @@
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/custom.js" type="text/javascript"></script>
+<script src="/js/jquery.hoverIntent.js" type="text/javascript"></script>
+<script src="/js/jquery.slicknav.min.js" type="text/javascript"></script>
+<script src="/js/jquery.sliderPro.min.js" type="text/javascript"></script>
+<script src="/js/odometer.min.js" type="text/javascript"></script>
+<script src="/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+<script src="/js/superfish.min.js" type="text/javascript"></script>
+<script src="/js/waypoints.min.js" type="text/javascript"></script>
+<script src="/js/wow.min.js" type="text/javascript"></script>
+<script src="/js/scrollreveal.min.js" type="text/javascript"></script>
+
+<script>
+  jQuery(document).ready(function ($) {
+    "use strict";
+
+    //  HEADER SLIDER HOOK
+    jQuery('#index-slider2').fadeIn(1000);
+    $('#index-slider2').sliderPro({
+      width: 955,
+      height: 610,
+      visibleSize: '100%',
+      forceSize: 'fullWidth',
+      arrows: true,
+      autoplay: true,
+      autoplayDelay: 8500,
+      autoplayOnHover: 'none',
+      slideDistance: 0,
+      breakpoints: {
+        1025: {
+          width: '75%'
+        },
+        500: {
+          width: '100%',
+          arrows: false
+        }
+      }
+    });
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+      loop: true,
+      items: 1,
+      margin: 0,
+      autoplay: true,
+      autoplayTimeout: 8500,
+      animateIn: 'fadeIn',
+      animateOut: 'rotateOutUpRight',
+      lazyLoad: true,
+    });
+    //  CLIENTS CAROUSEL HOOK
+    $('#clients-carousel').owlCarousel({
+      loop: true,
+      items: 5,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        1170: {
+          items: 5
+        }
+      }
+    });
+
+  });
+
+
+  jQuery(document).ready(function ($) {
+    "use strict";
+
+    window.odometerOptions = {
+      format: 'd'
+    };
+
+    $('.odometer').waypoint(function () {
+
+      setTimeout(function () {
+        $('#odometer1.odometer').html(999);
+      }, 500);
+
+      setTimeout(function () {
+        $('#odometer2.odometer').html(50);
+      }, 1000);
+
+      setTimeout(function () {
+        $('#odometer5.odometer').html(115);
+      }, 2500);
+
+    }, {
+        offset: 800,
+        triggerOnce: true
+      });
+  });
+</script>
+
+<script>
+  $(function () {
+
+    window.sr = ScrollReveal();
+
+    if ($(window).width() < 768) {
+
+      if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+      }
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+    } else {
+
+      sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+    }
+
+    sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+
+  });
+</script>

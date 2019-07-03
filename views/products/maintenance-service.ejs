@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+<body>
+    <% include ../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_products") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/products" target="_self"><%- i18n.__("nav_products") %></a></li>
+                    <li class="active"><span><%- i18n.__("maintenace-service") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="calltoaction home3">
+
+        <div class="row">
+            <blockquote class="blockquote-colored">
+                <p><%- i18n.__("support-menu") %></p>
+            </blockquote>
+        </div>
+        <div class="row spacing-45">
+            <h3><%- i18n.__("inspection-repair-maintenance") %></h3>
+            <hr>
+            <p><%- i18n.__("inspection-repair-maintenance-p1") %></p><br />
+            <p><%- i18n.__("inspection-repair-maintenance-p2") %><br />
+                <%- i18n.__("inspection-repair-maintenance-p3") %></p>
+            <p><%- i18n.__("inspection-repair-maintenance-p4") %></p>
+            <p><%- i18n.__("inspection-repair-maintenance-p5") %></p>
+            <h3><%- i18n.__("content-of-business") %></h3>
+            <hr>
+            <ul>
+                <li><%- i18n.__("inspection-repair-maintenance-li-1") %></li>
+                <li><%- i18n.__("inspection-repair-maintenance-li-2") %></li>
+                <li><%- i18n.__("inspection-repair-maintenance-li-3") %></li>
+                <li><%- i18n.__("inspection-repair-maintenance-li-4") %></li>
+                <li><%- i18n.__("inspection-repair-maintenance-li-5") %></li>
+            </ul>
+            <hr>
+            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <img src="/images/service-1.jpg" alt="Maintenance Services 1">
+            </div>
+            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <img src="/images/service-2.jpg" alt="Maintenance Services 1">
+            </div>
+            <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <img src="/images/service-3.jpg" alt="Maintenance Services 1">
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <% include ../partials/footer %>
+</body>
+<% include ../partials/scripts %>
+
+</html>

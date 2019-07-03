@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../../partials/head %>
+
+<body>
+    <% include ../../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_products") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/products" target="_self"><%- i18n.__("nav_products") %></a></li>
+                    <li><a href="/products/industrial-scales" target="_self"><%- i18n.__("industrial-scale") %></a></li>
+                    <li class="active"><span><%- i18n.__("belt-scale") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="services2" style="background: #E9E9E9">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <h2 title="Belt scale" class="text-left"><span><%- i18n.__("belt-scale") %></span></h2><br />
+                <p class="just"><%- i18n.__("belt-scale-p") %></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction home3" style="background: #fff">
+        <div class="row spacing-45">
+            <div class="col-md-offset-1 col-sm-10">
+                <h3><%- i18n.__("appearance") %></h3>
+                <hr>
+                <img src="/images/belt-scale-detail.jpg" alt="Belt scale">
+                <h3><%- i18n.__("features") %></h3>
+                <hr>
+                <p style="font-weight: bold"><%- i18n.__("belt-scale-li-1") %></p>
+                <p><%- i18n.__("belt-scale-li-1-p") %></p>
+                <p style="font-weight: bold"><%- i18n.__("belt-scale-li-2") %></p>
+                <p><%- i18n.__("belt-scale-li-2-p") %></p>
+                <p style="font-weight: bold"><%- i18n.__("belt-scale-li-3") %></p>
+                <p><%- i18n.__("belt-scale-li-3-p-1") %></p>
+                <p><%- i18n.__("belt-scale-li-3-p-2") %></p>
+                <p><%- i18n.__("belt-scale-li-3-p-3") %></p>
+                <p><%- i18n.__("belt-scale-li-3-p-4") %></p>
+            </div>
+    </section>
+    <% include ../../partials/footer %>
+</body>
+<% include ../../partials/scripts %>
+
+</html>

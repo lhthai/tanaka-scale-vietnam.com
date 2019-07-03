@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+
+<body>
+    <% include ../partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_news") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/" target="_self"><%- i18n.__("nav_home") %></a></li>
+                    <li><a href="/news" target="_self"><%- i18n.__("nav_news") %></a></li>
+                    <li class="/"><span><%- i18n.__("hand-over-signing-ceremony") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="content blog">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+
+                <!-- Blog Post-->
+                <article>
+                    <div class="shadow-effect">
+
+                        <div class="post-content">
+                            <div class="themeta">
+                                <span>22/05/2019</span>
+                                <span><%- i18n.__("posted-by") %> <a href="">Admin</a></span>
+                            </div>
+
+                            <h2 title="Hand Over Signing Ceremony"><a href=""><%- i18n.__("hand-over-signing-ceremony-h2") %></a></h2>
+                            <hr />
+                            <p><img alt="We are in VIV Asean 2019 at Bangkok"
+                                    title="We are in VIV Asean 2019 at Bangkok" src="/images/hand-over-signing-ceremony-1.jpg">
+                            </p>
+                            <p><img alt="We are in VIV Asean 2019 at Bangkok"
+                                    title="We are in VIV Asean 2019 at Bangkok" src="/images/hand-over-signing-ceremony-2.jpg"></p>
+                            <p><img alt="We are in VIV Asean 2019 at Bangkok"
+                                    title="We are in VIV Asean 2019 at Bangkok" src="/images/hand-over-signing-ceremony-3.jpg"></p>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <% include ../partials/footer %>
+</body>
+<% include ../partials/scripts %>
+
+</html>

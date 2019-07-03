@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/head %>
+
+<body>
+    <% include partials/header %>
+    <div id="page-header">
+        <div class="title-breadcrumbs">
+            <h1><%- i18n.__("nav_about") %></h1>
+            <div class="thebreadcumb">
+                <ul class="breadcrumb">
+                    <li><a href="/" target="_self"><%- i18n.__("nav_home") %></a></li>
+                    <li class="active"><span><%- i18n.__("nav_about") %></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="padding-mobile">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 title="Về chúng tôi"><%- i18n.__("nav_about") %></h2>
+                <p class="subtitle"><%- i18n.__("about-us-paragraph-1") %><br />
+                    <%- i18n.__("about-us-paragraph-2") %><br />
+                    <%- i18n.__("about-us-paragraph-3") %><br />
+                    <%- i18n.__("about-us-paragraph-4") %><br />
+                    <%- i18n.__("about-us-paragraph-5") %>
+
+                </p>
+            </div>
+        </div>
+        <div class="spacing-65"></div>
+
+        <div class="row custom-width-90 hidden-xs">
+            <div class="col-sm-12">
+                <div id="about2-video" style="background-color: #247c26">
+                    <div class="about2-video-container">
+                        <div class="videocaption">
+                            <div class="videocaption-content wow fadeIn" data-wow-duration="500ms"
+                                data-wow-delay="200ms">
+                                <h2 title="CÔNG NGHỆ VÀ ĐỘ CHÍNH XÁC CAO ĐƯỢC GẦY DỰNG QUA HÀNG THẾ KỶ.">
+                                    <%- i18n.__("phylosophy") %></h2>
+                                <hr class="small" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF VIDEO BACKGROUND -->
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- TABS -->
+                <div class="tabbable normaltabs tabs-top-horizontal">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#vision" data-toggle="tab"><%- i18n.__("vision") %></a></li>
+                        <li><a href="#mission" data-toggle="tab"><%- i18n.__("mission") %></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="vision">
+                            <h4 title="VISION" class="uppercase"><%- i18n.__("vision") %></h4>
+                            <p class="subtitle"><%- i18n.__("vision-p") %>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade in" id="mission">
+                            <h4 title="MISSION" class="uppercase"><%- i18n.__("mission") %> </h4>
+                            <p class="subtitle"><%- i18n.__("mission-p") %></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF TABS -->
+
+            </div>
+            <div class="col-md-6 col-md-12">
+                <div class="skills-progressbars">
+                    <img style="max-height: 270px" src="/images/iso9001.jpg" alt="về chúng tôi">
+
+                    <img style="max-height: 270px" src="/images/iso14001.jpg" alt="về chúng tôi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF SKILLS -->
+
+    <!-- TEAM -->
+    <section class="about2-team">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 title="CÁC KHÁCH HÀNG CỦA CHÚNG TÔI"><%- i18n.__("our-customers") %></h2>
+                <p class="text-center"><%- i18n.__("our-customers-p") %></p>
+                <div class="block-grid-md-3 block-grid-sm-3 block-grid-xs-1 team2-grid">
+
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/lixil.png" alt="Lixil" />
+                        </div>
+                    </div>
+
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/nippon.png" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/tnk.jpg" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/hoya.jpg" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/fuji.png" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/meiwa.jpg" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/ishida.png" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/winfield.png" alt="TPR" />
+                        </div>
+                    </div>
+                    <div class="block-grid-item black wow fadeInUp">
+                        <div class="shadow-effect">
+                            <img src="/images/sagawa.jpg" alt="TPR" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF TEAM -->
+    <% include partials/footer %>
+</body>
+<% include partials/scripts %>
+
+</html>
