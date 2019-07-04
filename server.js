@@ -23,12 +23,13 @@ dotenv.config();
 
 //configure i18n
 i18n.configure({
-  locales: ["vi", "en", "jp"],
+  locales: ['vi', 'en', 'jp'],
+  defaultLocale: 'vi',
   directory: __dirname + "/locales",
   cookie: "i18n"
 });
 
-app.use(cookieParser("tanaka-scale-vietnam"));
+app.use(cookieParser("tanaka"));
 app.use(
   session({
     secret: "tanaka-scale-vietnam",

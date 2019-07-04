@@ -4,17 +4,22 @@ const path = require("path");
 
 // Main Pages Routes
 router.get("/", (req, res, next) => {
-    res.render("index", { i18n: res });
+    if (!req.cookies.i18n) {
+        res.cookie("i18n", "vi");
+        res.redirect("/");
+    } else {
+        res.render("index", { i18n: res });
+    }
 });
 
 // i18n Handling langluages
-router.get("/en", (req, res, next) => {
-    res.cookie("i18n", "en");
+router.get("/vi", (req, res, next) => {
+    res.cookie("i18n", "vi");
     res.redirect("/");
 });
 
-router.get("/vi", (req, res, next) => {
-    res.cookie("i18n", "vi");
+router.get("/en", (req, res, next) => {
+    res.cookie("i18n", "en");
     res.redirect("/");
 });
 
